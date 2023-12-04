@@ -1,0 +1,328 @@
+.item {
+  height: 260px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background: var(--white-color);
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.textContainer {
+  position: relative;
+  text-align: left;
+  width: 150px;
+  margin-right: 4px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.37;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.text:hover,
+.text:focus {
+  color: var(--link-color);
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text:hover .adressLink,
+.text:focus .adressLink {
+  color: var(--link-color);
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adressLink {
+  text-decoration: none;
+  color: var(--black-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title {
+  margin-bottom: 10px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.titleLink {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.37;
+}
+
+.imageContainer {
+  margin-right: 12px;
+  margin-left: 4px;
+  height: 78px;
+  width: 110px;
+}
+
+.image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  cursor: pointer;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.37;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.isOpen {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.37;
+  text-decoration: none;
+  color: var(--black-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.isClosed {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.37;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.isOpen:hover,
+.isOpen:focus {
+  color: var(--link-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.isClosed:hover,
+.isClosed:focus {
+  color: var(--link-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.text:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.text,
+.link {
+  text-decoration: none;
+  color: var(--black-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text:hover,
+.text:focus,
+.link:hover,
+.link:focus {
+  color: var(--link-color);
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text:hover .link,
+.text:focus .link {
+  color: var(--link-color);
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.statusOpened {
+  font-family: 'Manrope', sans-serif;
+  font-style: italic;
+  font-size: 8px;
+  color: #03c03c;
+}
+
+.statusClosed {
+  font-family: 'Manrope', sans-serif;
+  font-style: italic;
+  font-size: 10px;
+  font-weight: 700;
+  color: #f40009;
+}
+
+.textTimeActive {
+  display: flex;
+  flex-direction: column;
+  color: var(--accent-color);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.37;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 4px;
+    box-shadow: 7px 4px 14px rgba(49, 21, 4, 0.07);
+    border-radius: 40px;
+    height: 300px;
+    margin-bottom: 0;
+  }
+
+  .imageContainer {
+    width: 120px;
+    height: 85px;
+  }
+
+  .container {
+    justify-content: flex-start;
+  }
+
+  .title {
+    margin-bottom: 16px;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+
+  .titleLink {
+    font-size: 16px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+
+  .adressLink {
+    font-size: 14px;
+  }
+
+  .textTime {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .isOpen {
+    font-size: 14px;
+  }
+
+  .isClosed {
+    font-size: 14px;
+  }
+
+  .textTimeActive {
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .text:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .statusClosed {
+    font-size: 12px;
+  }
+
+  .statusOpened {
+    font-size: 12px;
+  }
+
+  .empty {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .imageContainer {
+    width: 158px;
+    height: 112px;
+    margin-left: 24px;
+  }
+
+  .item {
+    height: 380px;
+  }
+
+  .titleLink {
+    font-size: 20px;
+  }
+
+  .textTime {
+    margin-bottom: 12px;
+  }
+
+  .isOpen {
+    font-size: 16px;
+  }
+
+  .isClosed {
+    font-size: 16px;
+  }
+
+  .textTimeActive {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+
+  .adressLink {
+    font-size: 16px;
+  }
+
+  .statusClosed {
+    font-size: 16px;
+  }
+
+  .statusOpened {
+    font-size: 16px;
+  }
+
+  .empty {
+    font-size: 16px;
+  }
+}

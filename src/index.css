@@ -1,0 +1,86 @@
+@import-normalize; /* bring in normalize.css styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@400;500&family=Poppins:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(253, 247, 242, 1);
+  line-height: 1.4;
+}
+
+:root {
+  --bg-color: #fdf7f2;
+  --accent-color: #f59256;
+  --black-color: #111111;
+  --grey-transparent-color: rgba(17, 17, 17, 0.6);
+  --link-color: #3091eb;
+  --white-color: #ffffff;
+  --white-transparent-color: rgba(255, 255, 255, 0.6);
+  --form-input-border-color: rgba(245, 146, 86, 0.5);
+}
+
+.react-icons {
+  vertical-align: middle;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p > a.active {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+li > a.active {
+  text-decoration-line: underline;
+  cursor: pointer;
+  color: var(--accent-color);
+}
+span > a.active {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}

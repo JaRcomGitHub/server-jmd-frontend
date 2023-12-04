@@ -1,0 +1,44 @@
+.userButton {
+  display: inline-flex;
+  justify-content: center;
+  height: 35px;
+  width: 164px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: var(--accent-color);
+}
+.userButton:hover {
+  background-color: var(--accent-color);
+}
+
+.userButton:active {
+  background-color: var(--accent-color);
+}
+
+.userButton:focus {
+  background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .userButton {
+    height: 44px;
+  }
+}
+
+.userLink {
+  margin-left: 13px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .userLink {
+    margin-left: 14px;
+    font-size: 16px;
+    line-height: 1.37;
+  }
+}

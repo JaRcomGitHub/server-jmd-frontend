@@ -1,0 +1,33 @@
+/* .container {
+  padding: 0 20px;
+  margin-top: 42px;
+} */
+
+/* @media screen and (min-width: 768px) {
+  .container {
+    padding-top: 32px;
+    margin-top: 88px;
+  }
+} */
+
+/* @media screen and (min-width: 1280px) {
+  .container {
+    padding-top: 16px;
+    margin-top: 58px;
+  }
+} */
+
+.title {
+  margin-top: 12px;
+  /* margin-bottom: 28px; */
+  /* font-weight: 700;
+  font-size: 12px;
+  line-height: 1.37; */
+  text-align: center;
+  color: var(--black-color);
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--black-color);
+}

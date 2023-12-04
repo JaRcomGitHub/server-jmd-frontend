@@ -1,0 +1,211 @@
+.container {
+  padding: 40px 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 40px 80px;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--black-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-weight: 600;
+    font-size: 36px;
+  }
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.44;
+  color: var(--black-color);
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .label {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+}
+
+.label_photo {
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .label_photo {
+    margin-bottom: 12px;
+  }
+}
+
+.file_btn {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.field {
+  display: block;
+  margin-top: 8px;
+  width: 240px;
+  background: var(--bg-color);
+  border: 1px solid var(--form-input-border-color);
+  border-radius: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 11px 14px 12px 14px;
+  color: rgba(27, 27, 27, 0.6);
+  outline-color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .field {
+    padding: 11px 16px 10px 16px;
+    margin-top: 12px;
+    width: 448px;
+    font-size: 16px;
+  }
+}
+
+.field:hover,
+.field:focus {
+  outline-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
+
+.label_last {
+  margin-bottom: 40px;
+}
+
+.field_last:hover,
+.field_last:focus {
+  outline-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
+
+.btn {
+  display: block;
+  width: 240px;
+  align-items: center;
+  padding: 9px;
+  background-color: var(--white-color);
+  border-radius: 40px;
+  border: 2px solid var(--accent-color);
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 20px;
+    width: 180px;
+  }
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.accent_btn {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+@media screen and (max-width: 767px) {
+  .accent_btn {
+    margin-bottom: 12px;
+  }
+}
+
+.field_photo {
+  display: block;
+  width: 208px;
+  height: 208px;
+  margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  outline-color: var(--accent-color);
+  cursor: pointer;
+  background-color: var(--bg-color);
+  background-image: url(../../../../images/akar-icons_plus.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .field_photo {
+    width: 182px;
+    height: 182px;
+    margin-bottom: 40px;
+  }
+}
+
+.field_photo:hover,
+.field_photo:focus {
+  outline-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
+
+.img_photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.error_msg {
+  margin-top: 6px;
+  color: #e2001a;
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .btn_list {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .field_comments {
+    width: 394px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 116px;
+    border-radius: 20px;
+  }
+}
