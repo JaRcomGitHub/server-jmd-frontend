@@ -8,7 +8,7 @@ export const SensorItem = ({ sn, ver, id, msgs }) => {
     msgs.forEach(function (item, i) {
       if (i % 2 === 0) {
         const date = new Date(item * 1000);
-        formatDate = moment(date).format('HH:mm:ss'); // YYYY-MM-DD
+        formatDate = moment(date).format('YYYY-MM-DD HH:mm:ss'); // YYYY-MM-DD
         // console.log(formatDate);
       } else {
         // console.log(item);
