@@ -1,1 +1,1 @@
-export const baseURL = 'https://backend.jarcom.pro';
+export const baseURL = 'https://backend.jarcom.info';
