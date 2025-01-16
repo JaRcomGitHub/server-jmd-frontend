@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { passTokenToHeadersAxios } from '../utilities/helpers';
 
-axios.defaults.baseURL = 'https://backend.jarcom.info';
+// axios.defaults.baseURL = 'https://backend.jarcom.info';
+axios.defaults.baseURL = 'http://195.206.233.221:3001';
 passTokenToHeadersAxios();
 
 export const addPet = async newPet => {
