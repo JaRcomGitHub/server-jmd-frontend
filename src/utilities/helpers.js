@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://backend.jarcom.info';
+// axios.defaults.baseURL = 'https://backend.jarcom.info';
+axios.defaults.baseURL = 'http://195.206.233.221:3001';
 
 export const fetchOurFriends = async () => {
   return await axios
